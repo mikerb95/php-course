@@ -4,8 +4,10 @@
 <div class="container my-5">
     <h1 class="text-center mb-5">Listado de Productos</h1>
     <div class="table-responsive">
-        <table class="table align-middle table-bordered table-striped table-hover shadow text-center">
-            <thead class="table-primary">
+
+        <table class="table align-middle table-bordered table-striped table-hover shadow text-center"> <!-- table-bordered agrega bordes a la tabla, table-striped agrega rayas, table-hover resalta la fila al pasar el mouse, text-center centra el texto -->
+        
+            <thead class="table-primary"> <!-- table-primary agrega color de fondo azul claro -->
                 <tr>
                     <th>Nombre producto</th>
                     <th>Cantidad almacen</th>
