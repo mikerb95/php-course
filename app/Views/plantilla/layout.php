@@ -10,7 +10,7 @@
 <body>
     <?php echo $this->include('plantilla/menu'); ?> <!-- Menu -->
     <br><br>
-    <? echo $this->renderSection('contenido'); ?> <!-- Contenido Dinamico -->
+    <?php echo $this->renderSection('contenido'); ?> <!-- Contenido Dinamico -->
     <br>
     <?php echo $this->include('plantilla/footer'); ?> <!-- Footer -->
 </body>
