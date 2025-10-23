@@ -10,6 +10,7 @@
     </div>
     <div>
         <label for="Cantidad">Cantidadpro:</label>
+        <input type="number" name="cantidadpro" required>
     </div>
     <div>
         <input type="number" name="preciopro" required>
