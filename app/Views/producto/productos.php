@@ -4,7 +4,7 @@
 <div class="container my-5">
     <h1 class="text-center mb-5">Listado de Productos</h1>
     <div class="table-responsive">
-        <table class="table align-middle table-bordered table-striped table-hover shadow">
+        <table class="table align-middle table-bordered table-striped table-hover shadow text-center">
             <thead class="table-primary">
                 <tr>
                     <th>Nombre producto</th>
