@@ -9,7 +9,7 @@
  
     </div>
     <div>
-        <label for="Cantidad">Cantidadpro:</label>
+        <label for="cantidad">Cantidadpro:</label>
         <input type="number" name="cantidadpro" required>
     </div>
     <div>

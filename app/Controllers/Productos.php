@@ -7,6 +7,11 @@ class Productos extends BaseController
     {
         return view('producto/productos');
     }
+
+    public function agregar()
+    {
+        return view('producto/agregar');
+    }
 }
 
 ?>
