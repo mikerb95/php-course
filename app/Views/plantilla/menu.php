@@ -10,13 +10,13 @@
           <a class="nav-link active" aria-current="page" href="<?= base_url('/') ?>">Inicio</a> <!-- Uso de base_url() para enlazar a la raiz del proyecto -->
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="<?= base_url('/productos') ?>">Productos</a>
+          <a class="nav-link" href="<?= base_url('/productos') ?>">Productos</a> <!-- Enlace a la lista de productos -->
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="<?= base_url('/productos/agregar') ?>">Agregar producto</a>
+          <a class="nav-link" href="<?= base_url('/productos/agregar') ?>">Agregar producto</a> <!-- Enlace para agregar un nuevo producto --> 
         </li>
         <li class="nav-item">
-          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+          <a class="nav-link disabled" aria-disabled="true">Disabled</a> <!-- Ejemplo de enlace deshabilitado -->
         </li>
       </ul>
     </div>
