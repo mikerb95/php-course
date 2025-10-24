@@ -1,5 +1,6 @@
 CREATE DATABASE tienda;
 USE tienda;
+
 CREATE TABLE almacenes (
     id_almacen INT AUTO_INCREMENT PRIMARY KEY,
     nombre_almacen VARCHAR(100),

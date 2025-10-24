@@ -1,0 +1,19 @@
+# Ignore environment and sensitive files
+.env
+
+# Ignore writable runtime directories
+writable/cache/
+writable/debugbar/
+writable/logs/
+writable/session/
+writable/uploads/
+
+# Ignore vendor dependencies
+vendor/
+
+# Ignore IDE and system files
+.vscode/
+.idea/
+*.log
+.DS_Store
+Thumbs.db
