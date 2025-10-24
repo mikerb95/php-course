@@ -5,6 +5,7 @@ class Productos extends BaseController
 {
     public function index()
     {
+        $db = \Config\Database::connect();
         return view('producto/productos');
     }
 
