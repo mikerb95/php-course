@@ -9,21 +9,20 @@
         
             <thead class="table-primary"> <!-- table-primary agrega color de fondo azul claro -->
                 <tr>
-                    <th>Nombre producto</th>
+                    <th>Codigo de barras</th>
                     <th>Cantidad almacen</th>
-                    <th>Precio</th>
+                    <th>Cantidad en almacen</th>
                 </tr>
             </thead>
             <tbody>
+                <?php foreach ($productos as $producto): ?>
                 <tr>
-                    <td>Borrador</td>
-                    <td>100</td>
-                    <td>$200</td>
+                    <td><?php echo $producto->codigo_barra; ?></td> // Acceder a la propiedad codigo_barra del objeto producto
+                    <td><?php echo $producto->cantidad_almacen; ?></td> // Acceder a la propiedad cantidad_almacen del objeto producto
+                    <td><?php echo $producto->cantidad_en_almacen; ?></td> // Acceder a la propiedad cantidad_en_almacen del objeto producto
                 </tr>
-                <tr>
-                    <td>Cuaderno</td>
-                    <td>500</td>
-                    <td>$3000</td>
+                <?php endforeach; ?>
+            </tbody>
         </table>
 
         <?php echo $this->endSection() ?>
