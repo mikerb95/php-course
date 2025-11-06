@@ -44,6 +44,18 @@ class Empleados extends BaseController
         $model->delete($id);
         return redirect()->to('/empleados');
     }
+
+    {
+        public function secretaria()
+        {
+            return view('pagina/secretaria');
+        }
+
+        public function vendedor()
+        {
+            return view('pagina/vendedor');
+        }
+    }
 }
 
 

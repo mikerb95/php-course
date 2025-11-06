@@ -3,7 +3,7 @@
 <div class="container my-5">
 <h1>Agregar Productos</h1>
 
-<form action="<<?php echo base_url('producto/guardar'); ?>" method="post" class="p-4 border shadow-sm bg-light">
+<form action="" method="post" class="p-4 border shadow-sm bg-light">
 <div class="mb-3">
     <label class="form-label">Nombre del producto:</label>
     <input type="text" name="nombrepro" required class="form-control" placeholder="Ej: Cuaderno">

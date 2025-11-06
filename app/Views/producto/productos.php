@@ -1,28 +1,26 @@
-<?php echo $this->extend('plantilla/layout') ?>
-<?php echo $this->section('contenido') ?>
-
+<?php echo $this->extend('plantilla/layout');?>
+<?php echo $this->section('contenido');?>
 <div class="container my-5">
-    <h1 class="text-center mb-5">Listado de Productos</h1>
-    <div class="table-responsive">
-
-        <table class="table align-middle table-bordered table-striped table-hover shadow text-center"> <!-- table-bordered agrega bordes a la tabla, table-striped agrega rayas, table-hover resalta la fila al pasar el mouse, text-center centra el texto -->
-        
-            <thead class="table-primary"> <!-- table-primary agrega color de fondo azul claro -->
-                <tr>
-                    <th>Codigo de barras</th>
-                    <th>Cantidad almacen</th>
-                    <th>Cantidad en almacen</th>
-                </tr>
-            </thead>
-            <tbody>
-                <?php foreach ($productos as $producto): ?>
-                <tr>
-                    <td><?php echo $producto->codigo_barra; ?></td> // Acceder a la propiedad codigo_barra del objeto producto
-                    <td><?php echo $producto->cantidad_almacen; ?></td> // Acceder a la propiedad cantidad_almacen del objeto producto
-                    <td><?php echo $producto->cantidad_en_almacen; ?></td> // Acceder a la propiedad cantidad_en_almacen del objeto producto
-                </tr>
-                <?php endforeach; ?>
-            </tbody>
-        </table>
-
-        <?php echo $this->endSection() ?>
+<h1 class="text-center mb-5">Listado de productos</h1>
+<div class="table-responsive">
+<table class="table table-striped table-hover table-bordered text-center align-middle shadow-sm">
+    <thead class="table-primary">
+        <tr>
+            <th>Codigo de Barras</th>
+            <th>Nombre Producto</th>
+            <th>Cantidad en Almacén</th>
+        </tr>
+    </thead>
+    <tbody>
+        <?php foreach($productos as $producto):?>
+        <tr>
+            <td><?php echo $producto->codigo_barra;?></td>
+            <td><?php echo $producto->nombre_pro;?></td>
+            <td><?php echo $producto->stock_pro;?></td>
+        </tr>
+        <?php endforeach;?>
+    </tbody>
+</table>
+</div>
+</div>
+<?php echo $this->endSection();?>

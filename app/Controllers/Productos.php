@@ -6,11 +6,10 @@ class Productos extends BaseController
     public function index()
     {
         $db = \Config\Database::connect();
-        $query = $db->query("SELECT * FROM producto");
-        // $resultado = $query->getResult();
-        $data['productos'] = $query->getResult();
-
-        return view('producto/productos');
+        $query = $db->query("SELECT codigo_barra, nombre_pro, stock_pro FROM producto;");
+        $resultado =$query->getResult();
+        $data =['productos' => $resultado];
+        return view('producto/productos', $data);
     }
 
     public function agregar()
@@ -18,5 +17,4 @@ class Productos extends BaseController
         return view('producto/agregar');
     }
 }
-
 ?>

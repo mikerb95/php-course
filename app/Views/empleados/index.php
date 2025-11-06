@@ -33,7 +33,8 @@
                 class="btn btn-warning">Editar Empleado</a>
 
                 <a href="<?php echo base_url('/empleados/eliminar/'.$emp['ced_empleado']);?>" 
-                class="btn btn-danger">Eliminar</a>
+                class="btn btn-danger" 
+                onclick="return confirm('¿Esta seguro de Eliminar este Empleado?');">Eliminar</a>
             </td>
         </tr>
         <?php endforeach; ?>
